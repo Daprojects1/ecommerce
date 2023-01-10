@@ -1,0 +1,98 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header, a:visited{
+  color: white;
+}
+.header, .footer{
+width: 100%;
+background: rgb(17, 17, 17);
+/* padding: 15px; */
+}
+
+.main{
+  min-height: 65vh;
+}
+
+.footer{
+
+}
+
+.header,.footer, .nav_main{
+  padding: 15px 25px;
+}
+
+/* Nav Css */
+#checkbox_toggle, .nav_main{
+  display: none;
+}
+
+.hamburger{
+  font-size: 25px;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+#checkbox_toggle:checked ~ .nav_main{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: rgb(17, 17, 17);
+  width: 100%;
+  height: calc(100% - 95px);
+  top: 95px;
+  left: 0;
+  border-top: 1px solid rgb(99, 98, 98);
+  animation: fade 0.5s;
+  gap: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.nav_main li{
+  padding-bottom: 50px;
+  border-bottom: 1px solid white;
+}
+
+
+.nav_main a:hover{
+  color: #d87d4a;
+
+}
+@keyframes fade{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

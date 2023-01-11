@@ -40,23 +40,15 @@ a{
   color: #d87d4a;
 
 }
-.header, .footer{
+.header, .footer, .main-content{
 width: 100%;
 background: rgb(17, 17, 17);
 color: white;
 }
 
-/* placeholder */
-.main{
-  height: 150vh;
+.header{
+  border-bottom: 0.3px solid white;
 }
-.cb-main{
-  /* background: lightgray; */
-  width: 100%;
-  height: 100%;
-
-}
-/* placeholder ends */
 
 
 .content-box{
@@ -69,6 +61,7 @@ color: white;
   align-items: center;
   justify-content: space-between;
   height: 65px;
+
 }
 
 /* Nav Css */
@@ -103,12 +96,6 @@ color: white;
 
 
 /* footer */
-.footer{
-  /* position: absolute;
-  left: 0;
-  bottom: 0; */
-
-}
 
 .footer_title{
   text-decoration: underline;
@@ -177,6 +164,41 @@ color: white;
   cursor: pointer;
 }
 
+
+/* main */
+/* placeholder */
+.main{
+  height: 150vh;
+  position: relative;
+}
+
+.cb-main{
+  /* background: lightgray; */
+  /* width: 100%;
+  height: 100%; */
+}
+
+.main-content{
+  height: 500px;
+  /* content line tbr */
+  /* border: 1px solid white;  */
+}
+
+.handle__color{
+  background: rgb(17, 17, 17);
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  z-index: -262622;
+}
+/* placeholder ends */
+
+.app{
+
+}
+
+
 @keyframes fade{
   0% {
     opacity: 0;
@@ -198,11 +220,12 @@ color: white;
   /* height: calc(100% - 95px); */
   top: 65px;
   left: 0;
-  border-top: 1px solid white;
+  border-top: .5px solid white;
   animation: fade 0.5s;
   gap: 50px;
   padding-top: 50px;
   text-align: center;
+  z-index: 1;
 }
 }
 @media screen and (min-width:760px) {
@@ -244,8 +267,12 @@ color: white;
 
 @media screen and (min-width:1080px) {
   /* nav and header */
+  .header{
+    border-bottom: none;
+  }
   .cb-header{
     justify-content: space-between;
+    border-bottom: 0.2px solid rgb(223, 219, 219);
   }
 
   .hamburger{

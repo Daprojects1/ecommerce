@@ -8,46 +8,56 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <ul class="nav_main">
-          <li><a href="/" data-link>HOME</a></li>
-          <li><a href="/headphones" data-link>HEADPHONES</a></li>
-          <li><a href="/speakers" data-link>SPEAKERS</a></li>
-          <li><a href="/earphones" data-link>EARPHONES</a></li>
-        </ul>
-      </nav>
-      <h2>audiophile</h2>
-      <a href="/cart" data-link>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16"> 
-          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/> 
-        </svg>
-      </a>
-    </header>
-    <main class="main">      
-      <div id="app">
-
-      </div>
-    </main>
-    <footer class="footer">
-      <!--  flex with gap -->
-      <section>
-        <h1></h1>
-        <p></p>
-        <!-- <small></small> -->
-      </section>
-      <div>
+      <div class="content-box cb-header">
         <nav class="nav">
-          <ul>
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <ul class="nav_main">
             <li><a href="/" data-link>HOME</a></li>
             <li><a href="/headphones" data-link>HEADPHONES</a></li>
             <li><a href="/speakers" data-link>SPEAKERS</a></li>
             <li><a href="/earphones" data-link>EARPHONES</a></li>
           </ul>
         </nav>
-        <div>
-          <!-- icons -->
+        <h2 class="header-title">audiophile</h2>
+        <a href="/cart" class="cart-icon" data-link>
+          <img src="./assets/shared/desktop/icon-cart.svg"/>
+        </a>
+      </div>
+    </header>
+    <main class="main">    
+      <div class="content-box cb-main">
+        <div id="app">
+
+        </div>
+      </div>  
+    </main>
+    <footer class="footer ">
+      <!--  flex with gap -->
+      <div class="content-box cb-footer">
+        <div class="footer_nav">
+          <h2 class="footer_title">audiophile</h2>
+          <nav class="nav">
+          <ul class="nav_footer">
+            <li><a href="/" data-link>HOME</a></li>
+            <li><a href="/headphones" data-link>HEADPHONES</a></li>
+            <li><a href="/speakers" data-link>SPEAKERS</a></li>
+            <li><a href="/earphones" data-link>EARPHONES</a></li>
+          </ul>
+        </nav>
+        </div>
+        
+        <div class="footer_info">
+            <p>  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers 
+              and sound specialists who are devoted to helping you get the most out of personal audio. Come and 
+              visit our demo facility - we’re open 7 days a week.</p>
+            <p>  Copyright 2021. All Rights Reserved</small>
+            <!-- icons -->
+            <div class="footer-icons">
+              <img src="./assets/shared/desktop/icon-facebook.svg" alt="facebook icon"/>
+              <img src="./assets/shared/desktop/icon-twitter.svg" alt="twitter icon"/>
+              <img src="./assets/shared/desktop/icon-instagram.svg" alt="instagram icon"/>
+            </div>
         </div>
       </div>
 

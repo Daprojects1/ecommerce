@@ -40,14 +40,14 @@ a{
   color: #d87d4a;
 
 }
-.header, .footer, .main-content{
+.header, .footer{
 width: 100%;
 background: rgb(17, 17, 17);
 color: white;
 }
 
 .header{
-  border-bottom: 0.3px solid white;
+  border-bottom: 0.3px solid rgba(255, 255, 255, 0.1);
 }
 
 
@@ -60,7 +60,7 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 65px;
+  height: 90px;
 
 }
 
@@ -172,25 +172,25 @@ color: white;
   position: relative;
 }
 
-.cb-main{
-  /* background: lightgray; */
-  /* width: 100%;
-  height: 100%; */
-}
-
 .main-content{
   height: 500px;
   /* content line tbr */
   /* border: 1px solid white;  */
 }
 
-.handle__color{
+.main-banner{
   background: rgb(17, 17, 17);
   width: 100%;
-  height: 500px;
-  position: absolute;
-  top: 0;
-  z-index: -262622;
+  display: flex;
+  justify-content: center;
+}
+
+.main-banner img{
+ 
+  max-height: 600px;
+  max-width: 600px;
+  filter: opacity(0.6) drop-shadow(0 0 0 black) ;
+  /* filter:  invert(0%) sepia(86%) saturate(1302%) hue-rotate(120deg) brightness(116%) contrast(90%); */
 }
 /* placeholder ends */
 
